@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body class="<%= page %>">
+    <header>
+        <div class="hero">
+            <section class="layout">
+                <div class="branding">
+                    <a href="/">
+                        <img src="/images/misc/rouxacademymeetups.svg" alt="Roux Academy Logo">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="navigation">
+            <section class="layout">
+                <ul class="nav">
+                    <li><a href="/"><i class="icon-home"></i>Home</a></li>
+                    <li><a href="/speakers"><i class="icon-user"></i>Speakers</a></li>
+                </ul>
+            </section>
+        </div>
+    </header>
+    <% include partials/speakerslist.ejs %>
+    <section class="layout">
+        <div class="primary">
+            <% include partials/whoarewe.ejs %>
+            <% include partials/getbusy.ejs %>
+            <% include partials/whoshouldcome.ejs %>
+        </div>
+        <aside class="secondary">
+            <% include partials/nextmeeting.ejs %>
+        </aside>
+        <aside class="secondary">
+            <% include partials/artworklist.ejs %>
+        </aside>
+    </section>
+    <footer>
+        <section class="layout">
+            <p><% include partials/socialmedia.ejs %></p>
+        </section>
+    </footer>
+  </body>
+</html>
